@@ -327,7 +327,7 @@ nav .fa {
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
@@ -1198,3 +1198,317 @@ h3{
     font-weight: 600;
     margin: 30px 0;;
 } 
+
+.blog-left p{
+    color: #222;
+    padding: 0;
+}
+.blog-right {
+    flex-basis: 32%;
+   
+}
+.blog-right h3 {
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+.blog-right h3:hover {
+    background: #d32f2f; 
+    color: #ffe082;       
+    cursor: pointer;      
+    transform: scale(1.03); 
+}
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+}
+
+.blog-right div:hover {
+    background-color: #f0f0f0;  
+    color: #000;                
+    transform: scale(1.02);     
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.comment-box{
+    
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
+
+
+}
+.comment-box h3 {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+
+}
+.comment-form input, .comment-form textarea {
+     width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+
+
+.comment-form input:hover,
+.comment-form textarea:hover,
+.comment-form input:focus,
+.comment-form textarea:focus {
+    background: #fff;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.2);
+}
+
+.comment-box button {
+    margin: 10px 0;
+    padding: 10px 25px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.comment-box button:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+
+
+
+
+/*<!-----------------contact us--------------------->*/
+
+
+
+
+
+
+/* .location{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+    
+}
+.location iframe{
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+   
+}
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+   
+}
+.contact-col div .fa {
+    font-size: 30px;
+    color: #f44336;
+    margin-right: 30px;
+    margin: 10px;
+}
+.contact-col div p {
+    padding: 0;
+
+}
+.contact-col div h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #555;
+} */
+    
+/* ---------- LOCATION SECTION ---------- */
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+}
+
+.location iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact-us {
+    width: 80%;
+    margin: auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contact-col div:hover {
+    transform: scale(1.02);
+}
+
+.contact-col div .fa {
+    font-size: 30px;
+    color: #f44336;
+    margin-right: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-col div:hover .fa {
+    transform: rotate(10deg) scale(1.2);
+    color: #ff6659;
+}
+
+.contact-col div p {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contact-col div:hover p {
+    color: #f44336;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-col div:hover h5 {
+    color: #f44336;
+    transform: scale(1.05);
+}
+
+/* ---------- FORM INPUTS & TEXTAREA ---------- */
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 17px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.contact-col input:hover,
+.contact-col textarea:hover {
+    border-color: #f44336;
+    background-color: #fff;
+}
+
+.contact-col input:focus,
+.contact-col textarea:focus {
+    border-color: #f44336;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.3);
+}
+
+.contact-col input::placeholder,
+.contact-col textarea::placeholder {
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.contact-col input:focus::placeholder,
+.contact-col textarea:focus::placeholder {
+    color: #f44336;
+}
+
+/* ---------- OPTIONAL SUBMIT BUTTON STYLE ---------- */
+.contact-col button {
+    padding: 12px 30px;
+    border: none;
+    background-color: #f44336;
+    color: rgb(230, 18, 18);
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.2);
+}
+
+.contact-col button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+
+/* ---------- ENTRY ANIMATION ---------- */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
