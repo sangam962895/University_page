@@ -24,7 +24,7 @@ body {
     position: relative;
     overflow: hidden;
     /* Give header a subtle initial rotation for depth */
-    transform: rotateX(2deg) translateY(-5px);
+    transform: rotateX(.5deg) translateY(-20px);
     transition: transform 0.5s ease-out;
 }
 
@@ -33,13 +33,13 @@ body {
 }
 
 /* --- NAVIGATION BAR WITH 3D HOVER --- */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 6%;
     z-index: 1000;
-    /* Add a slight Z-axis presence to the nav */
     transform: translateZ(50px);
     transition: transform 0.4s ease-out;
 }
@@ -58,9 +58,10 @@ nav img:hover {
 }
 
 /* Navigation Links */
+
 .nav-links {
     flex: 1;
-    text-align: left;
+    text-align: right;
 }
 
 .nav-links ul {
@@ -83,21 +84,23 @@ nav img:hover {
 }
 
 /* Link Style */
+
 .nav-links ul li a {
-    color: #fff;
+    
+    color: #bc9ec7;
     text-decoration: none;
     font-weight: 600;
-    font-size: 15px;
-    text-transform: uppercase;
-    position: relative;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
+    text-transform: none;
+    position: relative; 
+    transition: color 0.3s ease, transform 0.2s ease;
     display: inline-block; /* Required for transform */
     transform: translateZ(0); /* Ensure initial 3D context */
 }
 
 .nav-links ul li a:hover {
-    color: #f44336; /* Color change for accent */
-    transform: translateZ(10px); /* Push text forward slightly */
+    color: #23948c; /* Color change for accent */
+    transform: translateZ(5px); /* Push text forward slightly */
 }
 
 /* Underline Effect */
@@ -115,7 +118,7 @@ nav img:hover {
 
 .nav-links ul li a:hover::after {
     width: 100%;
-    transform: translateZ(5px); /* Push underline forward */
+    transform: translateZ(2px); /* Push underline forward */
 }
 
 /* Responsive tweak (if needed) */
@@ -133,25 +136,28 @@ nav img:hover {
 }
 
 /* Hamburger Icon */
+
 nav .fa {
-    display: none; /* Keep original display */
-    transition: transform 0.3s ease;
+    display: none; 
+    transition: transform 0.1s ease;
 }
 
 nav .fa:hover {
-    transform: rotate(90deg) scale(1.1);
+    transform: rotate(0deg) scale(1.1);
 }
 
 /* Hero Text */
+
 .text-box {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) translateZ(100px); /* Push text forward */
+    transform: translate(-50%, -50%) translateZ(100px);
     text-align: center;
     color: #fff;
     transition: transform 0.5s ease;
-}
+    
+} 
 
 .text-box:hover {
     transform: translate(-50%, -50%) translateZ(120px) scale(1.02); /* Pop more on hover */
@@ -186,6 +192,7 @@ nav .fa:hover {
 }
 
 /* Button */
+
 .hero-btn {
     margin-top: 30px;
     display: inline-block;
@@ -201,7 +208,7 @@ nav .fa:hover {
     overflow: hidden;
     z-index: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: translateZ(30px); /* Give button initial depth */
+    transform: translateZ(30px); 
 }
 
 .hero-btn:hover {
@@ -453,7 +460,8 @@ p {
 }
 
 .campus-col:hover img {
-    transform: scale(1.15) translateZ(-5px); /* Zoom image slightly back for depth effect */
+    transform: scale(2) translateZ(-10px); */
+
 }
 
 .layer {
@@ -1431,6 +1439,7 @@ p {
 }
 
 /* ---------- CONTACT SECTION ---------- */
+
 .contact-us {
     width: 80%;
     margin: auto;
@@ -1578,6 +1587,8 @@ p {
 }
 
 /* ---------- ENTRY ANIMATION ---------- */
+
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
